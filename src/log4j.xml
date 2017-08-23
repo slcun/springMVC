@@ -4,7 +4,7 @@
 
 	<appender name="stdout" class="org.apache.log4j.ConsoleAppender">
 		<layout class="org.apache.log4j.PatternLayout">
-			<param name="ConversionPattern" value="[%p] %d - %l - %m%n" />
+			<param name="ConversionPattern" value="[%p] %d - [%t] %l - %m%n" />
 		</layout>
 	</appender>
 
@@ -18,7 +18,7 @@
 	</appender>
 
 	<logger name="com">
-		<level value="info" />
+		<level value="erro" />
 		<appender-ref ref="stdout" />
 	</logger>
 
